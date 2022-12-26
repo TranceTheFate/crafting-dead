@@ -1,33 +1,28 @@
 ![Crafting Dead Logo](./image/crafting-dead-logo.png)  
 
-[现在是简体中文] [Change to English](./README_en.md)  
+[Now in English] [切换为简体中文](./README_zh_cn.md)  
 
-# Preface
+Starting out as a mod for Minecraft 1.5, Crafting Dead has been around for many years now. It was built on F3RULLO's Gun Mod, one of the first gun mods on the Minecraft scene and has been growing ever since, constantly being enhanced with more content and features.
 
-> 这是行尸走肉模组的一个fork，旨在给中国玩家带来本地化体验
-
-
-Crafting Dead起源于Minecraft 1.5的枪械模组, Crafting Dead（以下称为行尸走肉）已经存在多年了。它是以F3RULLO的枪械Mod为基础创建的, 作为Minecraft中的第一批枪械Mod之一，它一直在发展, 不断地增加了内容和功能。
-
-行尸走肉模组增加了大量的生物和枪支, 以及装饰品和医疗用品. 枪械自定义性强, 您可以使用自定义配件和喷漆来增强枪械的美观和实用性；具有精确的命中检测，延迟补偿和射击反馈。包括急救箱, 肾上腺素和绷带等医疗用品，得以从战斗中快速逃离，攻击和恢复。
+Crafting Dead adds in a multitude of zombies and guns, along with cosmetics and medical supplies. The guns are fully customisable with attachments and paints; they are competitive ready with accurate hit detection, latency compensation and recoil. Medical supplies include first aid kits, adrenaline and bandages enabling you to quickly escape, attack and recover from combat situations.
 
 # Discord
 ![Discord Banner 2](https://discordapp.com/api/guilds/473735245636698153/widget.png?style=banner2)
 
 # Contributing
-我们欢迎提交Pull Requests, 但请遵守以下准则：
-* 使用 [Google style guide](https://github.com/google/styleguide)
-* 在适当的地方添加`@Override` 以及注解,这样可以使代码更加整洁，方便维护与多人协作
-* 将半模糊的变量(例如p_77624_1_)重命名为有意义的名称
-* 打开编译器警告并解决所有这些问题(原始类型(raw types)，资源泄漏(resource leaks)，未使用的导入(unused imports)，未使用的变量等(unused variables))。
-* 使用关键字尽可能使代码清晰/易读，并避免含糊不清的的命名冲突(可能不被注意到)
-* 在if语句周围使用花括号，使它们更清晰，更容易展开，例如`{}`。
+Pull requests are always welcome, however please adhere to the following guidlines:
+* Use the [Google style guide](https://github.com/google/styleguide)
+* Add `@Override` annotations where appropriate to make overrides explicitly clear
+* Rename semi-obfuscated variables (e.g. p_77624_1_) to meaningful names
+* Turn on compiler warnings; resolve all of them (raw types, resource leaks, unused imports, unused variables etc.)
+* Always use `this` keyword to make code as clear/readable as possible and to avoid ambiguous naming conflicts (which can go without notice)
+* Always use curly braces `{}` around if statements to make them clearer and easily expandable, e.g. 
 ```java
 if(foo) {
   bar();
 }
 ```
-而不是
+instead of 
 ```java
 if(foo)
   bar();
